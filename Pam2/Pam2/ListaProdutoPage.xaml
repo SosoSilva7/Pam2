@@ -8,7 +8,7 @@
         <ListView x:Name="lstProduto"> <!-- Name para poder reconhecer no codigo -->
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Produto">
-                    <ViewCell>
+                    <ViewCell Tapped="ViewCell_Tapped"> <!-- espaço para as informações do listview, quando selecionado ele mostra o item escolhido e as informações exibidas naquela area-->
                         <Grid >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
