@@ -4,6 +4,10 @@ public partial class ListaProdutoPage : ContentPage
 {
 	public ListaProdutoPage()
 	{
-		InitializeComponent();
+        List<Produto> lista = Produto.Lista;
+
+        InitializeComponent();
+		lstProduto.ItemsSource = lista;
+
 	}
 }
